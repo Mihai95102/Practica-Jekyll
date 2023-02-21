@@ -1,53 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Práctica 1 | Prácica Jekyll IAW</title>
-<meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Práctica 1" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="IAW-Practica-01 Práctica 01 del módulo de IAW" />
-<meta property="og:description" content="IAW-Practica-01 Práctica 01 del módulo de IAW" />
-<link rel="canonical" href="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html" />
-<meta property="og:url" content="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html" />
-<meta property="og:site_name" content="Prácica Jekyll IAW" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-02-20T19:18:00-06:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Práctica 1" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-20T19:18:00-06:00","datePublished":"2023-02-20T19:18:00-06:00","description":"IAW-Practica-01 Práctica 01 del módulo de IAW","headline":"Práctica 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html"},"url":"http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/Practica-Jekyll/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/Practica-Jekyll/feed.xml" title="Prácica Jekyll IAW" /></head>
-<body><header class="site-header" role="banner">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/Practica-Jekyll/">Prácica Jekyll IAW</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/Practica-Jekyll/about/">Acerca de</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Práctica 1</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2023-02-20T19:18:00-06:00" itemprop="datePublished">Feb 20, 2023
-      </time></p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="iaw-practica-01">IAW-Practica-01</h1>
+I"�+<h1 id="iaw-practica-01">IAW-Practica-01</h1>
 <p>Práctica 01 del módulo de IAW</p>
 
 <h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia:</h2>
@@ -58,7 +9,7 @@ La configuración de la instancia será la siguiente:</p>
 <p><br />
 <strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu</p>
 
-<p><img src="images/practica1/creacion1.png" width="350" /></p>
+<p><img src="./images/practica1/creacion1.png" alt="" /></p>
 
 <p><br />
 <strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
@@ -241,35 +192,4 @@ apt <span class="nb">install </span>phpmyadmin php-mbstring php-zip php-gd php-j
 <p>Una vez accedamos podemos ver las estadísticas del servidor.</p>
 
 <p><img src="images/practica1/comprobar6.png" width="350" /></p>
-
-  </div><a class="u-url" href="/Practica-Jekyll/practicas/2023/02/20/practica1.html" hidden></a>
-</article>
-
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/Practica-Jekyll/"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">Prácica Jekyll IAW</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Prácica Jekyll IAW</li><li><a class="u-email" href="mailto:mbut182@g.educaand.es">mbut182@g.educaand.es</a></li></ul>
-      </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Mihai95102"><svg class="svg-icon"><use xlink:href="/Practica-Jekyll/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Mihai95102</span></a></li><li><a href="https://www.twitter.com/ElMatador95102"><svg class="svg-icon"><use xlink:href="/Practica-Jekyll/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">ElMatador95102</span></a></li></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
-        <p>Hola buenas tardes esto es una prueba de creación de un página Web con Jekyll.</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
-</body>
-
-</html>
+:ET
