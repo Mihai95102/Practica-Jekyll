@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://0.0.0.0:4000/Practica-Jekyll/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/Practica-Jekyll/" rel="alternate" type="text/html" /><updated>2023-02-22T03:32:01-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/feed.xml</id><title type="html">Prácica Jekyll IAW</title><subtitle>Hola buenas tardes esto es una prueba de creación de un página Web con Jekyll.</subtitle><entry><title type="html">Práctica 1</title><link href="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html" rel="alternate" type="text/html" title="Práctica 1" /><published>2023-02-20T19:18:00-06:00</published><updated>2023-02-20T19:18:00-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1</id><content type="html" xml:base="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html"><![CDATA[<h1 id="iaw-practica-01">IAW-Practica-01</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://0.0.0.0:4000/Practica-Jekyll/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/Practica-Jekyll/" rel="alternate" type="text/html" /><updated>2023-02-22T03:35:15-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/feed.xml</id><title type="html">Prácica Jekyll IAW</title><subtitle>Hola buenas tardes esto es una prueba de creación de un página Web con Jekyll.</subtitle><entry><title type="html">Práctica 1</title><link href="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html" rel="alternate" type="text/html" title="Práctica 1" /><published>2023-02-20T19:18:00-06:00</published><updated>2023-02-20T19:18:00-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1</id><content type="html" xml:base="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html"><![CDATA[<h1 id="iaw-practica-01">IAW-Practica-01</h1>
 <p>Práctica 01 del módulo de IAW</p>
 
 <h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia:</h2>
@@ -9,7 +9,7 @@ La configuración de la instancia será la siguiente:</p>
 <p><br />
 <strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu</p>
 
-<p><img src="../../../../../_posts/images/practica1/creacion1.png" width="350" /></p>
+<p><img src="images/practica1/creacion1.png" width="350" /></p>
 
 <p><br />
 <strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
