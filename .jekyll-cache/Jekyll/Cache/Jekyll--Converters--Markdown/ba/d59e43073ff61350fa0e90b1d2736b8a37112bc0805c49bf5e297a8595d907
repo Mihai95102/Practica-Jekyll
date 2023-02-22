@@ -1,0 +1,195 @@
+I"_-<h1 id="iaw-practica-01">IAW-Practica-01</h1>
+<p>Práctica 01 del módulo de IAW</p>
+
+<h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia:</h2>
+<p>Lo primero que haremos será entrar en dentro del panel EC2 en AWS Academy para poder lanzar la nueva instancia.
+<br />
+La configuración de la instancia será la siguiente:</p>
+
+<p><br />
+<strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion1.png" alt="Error" class="center" />{ width=350 }</p>
+
+<p><br />
+<strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion2.png" alt="Error" class="center" /></p>
+
+<p><br />
+<strong>3:</strong> Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion3.png" alt="Error" class="center" /></p>
+
+<p><br />
+<strong>4:</strong> Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario.</p>
+
+<h2 id="implementación-de-la-instancia-en-visual-studio-code">Implementación de la Instancia en Visual Studio Code</h2>
+
+<p>Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del <em>Explorador Remoto</em> de <strong>Microsoft</strong></p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/implementar1.png" alt="Error" class="center" /></p>
+
+<p><br />
+<strong>1:</strong> Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/implementar2.png" alt="Error" class="center" /></p>
+
+<p><br />
+<strong>2:</strong> Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en <strong>GitHub</strong> para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/Mihai95102/IAW-Practica-01.git
+</code></pre></div></div>
+
+<h2 id="empezando-a-automatizar-los-scripts">Empezando a automatizar los scripts</h2>
+
+<p>Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio:</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/trabajo1.png" alt="Error" class="center" /></p>
+
+<p><br />
+Empezamos a crear el script de automatización para la instalación de las herramientas LAMP</p>
+
+<p>El script <em>install_lamp.sh</em> contendrá lo siguiente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nb">set</span> <span class="nt">-x</span>
+
+<span class="c"># Actualizamos los repositorios</span>
+apt-get update
+
+<span class="c"># Actualizamos los paquetes nuevos</span>
+<span class="c"># apt-get upgrade -y</span>
+
+<span class="c"># Instalamos el servidor web apache</span>
+apt-get <span class="nb">install </span>apache2 <span class="nt">-y</span>
+
+<span class="c"># Instalamos el sistema gestor de BD</span>
+apt-get <span class="nb">install </span>mysql-server <span class="nt">-y</span>
+
+<span class="c"># Instalamos los módulos de PHP</span>
+apt-get <span class="nb">install </span>libapache2-mod-php php-mysql <span class="nt">-y</span>
+
+<span class="c"># Copiamos el archivo para ver que se ha instalado</span>
+<span class="nb">cp</span> ../PHP/info.php /var/www/html
+</code></pre></div></div>
+
+<p>El siguiente script y último que creamremos será uno el que instalaremos las herramientas de PHPMyAdmin, Adminer y GoAcess.</p>
+
+<p>El script de <em>install.tools.sh</em> será el siguiente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nb">set</span> <span class="nt">-x</span>
+
+<span class="c"># Variables de configuración</span>
+<span class="nv">PHPMYADMIN_APP_PASSWORD</span><span class="o">=</span>hola
+<span class="nv">STATS_USER</span><span class="o">=</span>mihai
+<span class="nv">STATS_PASSWORD</span><span class="o">=</span>hola
+<span class="nv">DB_USER</span><span class="o">=</span>mihai
+<span class="nv">DB_PASSWORD</span><span class="o">=</span>hola
+
+<span class="c"># Configuramos las respuestas para hacer una instalación desatendida de phpMyAdmin</span>
+<span class="nb">echo</span> <span class="s2">"phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2"</span> | debconf-set-selections
+<span class="nb">echo</span> <span class="s2">"phpmyadmin phpmyadmin/dbconfig-install boolean true"</span> | debconf-set-selections
+<span class="nb">echo</span> <span class="s2">"phpmyadmin phpmyadmin/mysql/app-pass password </span><span class="nv">$PHPMYADMIN_APP_PASSWORD</span><span class="s2">"</span> | debconf-set-selections
+<span class="nb">echo</span> <span class="s2">"phpmyadmin phpmyadmin/app-password-confirm password </span><span class="nv">$PHPMYADMIN_APP_PASSWORD</span><span class="s2">"</span> | debconf-set-selections
+
+<span class="c"># Creación de la base de datos y el usuario de BD</span>
+mysql <span class="nt">-u</span> root <span class="o">&lt;&lt;&lt;</span> <span class="s2">"DROP USER IF EXISTS </span><span class="nv">$DB_USER</span><span class="s2">"</span>
+mysql <span class="nt">-u</span> root <span class="o">&lt;&lt;&lt;</span> <span class="s2">"CREATE USER IF NOT EXISTS '</span><span class="nv">$DB_USER</span><span class="s2">'@'%' IDENTIFIED BY '</span><span class="nv">$DB_PASSWORD</span><span class="s2">'"</span>
+mysql <span class="nt">-u</span> root <span class="o">&lt;&lt;&lt;</span> <span class="s2">"GRANT ALL PRIVILEGES ON *.* TO </span><span class="nv">$DB_USER</span><span class="s2">@'%'"</span>
+
+<span class="c"># Instalación de phpMyAdmin</span>
+apt <span class="nb">install </span>phpmyadmin php-mbstring php-zip php-gd php-json php-curl <span class="nt">-y</span>
+
+<span class="c"># Instalación de Adminer:</span>
+
+    <span class="c"># Descargamos el archivo de Adminer</span>
+    wget https://github.com/vrana/adminer/releases/download/v4.8.1/adminer-4.8.1-mysql.php
+
+    <span class="c"># Creamos un directorio para Adminer</span>
+    <span class="nb">mkdir</span> <span class="nt">-p</span> /var/www/html/adminer
+
+    <span class="c"># Renombramos el archivo</span>
+    <span class="nb">mv </span>adminer-4.8.1-mysql.php /var/www/html/adminer/index.php
+
+<span class="c"># Instalación de GoAccess:</span>
+    
+    <span class="c"># Añadimos el repositorio de GoAccess</span>
+    <span class="nb">echo</span> <span class="s2">"deb http://deb.goaccess.io/ </span><span class="si">$(</span>lsb_release <span class="nt">-cs</span><span class="si">)</span><span class="s2"> main"</span> <span class="o">&gt;</span> /etc/apt/sources.list.d/goaccess.list
+    
+    <span class="c"># Añadimos la clave pública de GoAccess en nuestra máquina</span>
+    wget <span class="nt">-O</span> - https://deb.goaccess.io/gnugpg.key | <span class="nb">sudo </span>apt-key add -
+    
+    <span class="c"># Actualizamos los repositorios</span>
+    apt update
+    
+    <span class="c"># Instalamos GoAccess</span>
+    apt <span class="nb">install </span>goaccess <span class="nt">-y</span>
+
+<span class="c"># Creamos el directorio stats</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> /var/www/html/stats
+
+<span class="c"># Modificamos el propietario y el grupo del directorio /var/www/html</span>
+<span class="nb">chown </span>www-data:www-data /var/www/html <span class="nt">-R</span>
+
+<span class="c"># Ejecutamos GoAcces en segundo plano</span>
+<span class="nb">sudo </span>goaccess /var/log/apache2/access.log <span class="nt">-o</span> /var/www/html/stats/index.html <span class="nt">--log-format</span><span class="o">=</span>COMBINED <span class="nt">--real-time-html</span> <span class="nt">--daemonize</span>
+
+<span class="c"># Control de acceso a un directorio con .htaccess:</span>
+
+    <span class="c"># Creamos un directorio para guardar el archivo de claves</span>
+    <span class="nb">mkdir</span> <span class="nt">-p</span> /etc/apache2/claves
+
+    <span class="c"># Creamos un usuario/password/en un archivo .htpasswd</span>
+    <span class="nb">sudo </span>htpasswd <span class="nt">-bc</span> /etc/apache2/claves/.htpasswd <span class="nv">$STATS_USER</span> <span class="nv">$STATS_PASSWORD</span>
+
+    <span class="c"># Copiamos el archivo de configuración de Apache</span>
+    <span class="nb">cp</span> ../Conf/000-default.conf /etc/apache2/sites-available
+
+    <span class="c"># Reiniciamos el servicio de Apache</span>
+    systemctl restart apache2
+
+<span class="c"># Control de acceso a un directorio con .htaccess</span>
+
+     <span class="c"># Creamos un usuario/password/en un archivo .htpasswd</span>
+    <span class="nb">sudo </span>htpasswd <span class="nt">-bc</span> /etc/apache2/claves/.htpasswd <span class="nv">$STATS_USER</span> <span class="nv">$STATS_PASSWORD</span>
+
+    <span class="c"># Copiamos el archivo htaccess en /var/www/html/stats</span>
+    <span class="nb">cp</span> ../htaccess/htaccess /var/www/html/stats/.htaccess
+
+    <span class="c"># Copiamos el archivo de configuración de Apache</span>
+    <span class="nb">cp</span> ../Conf/000-default-htaccess.conf /etc/apache2/sites-available/000-default.conf
+
+    <span class="c"># Reiniciamos el servicio de Apache</span>
+    systemctl restart apache2
+</code></pre></div></div>
+
+<p>Una ejecutemos estos scripts podremos comprobar que la instalación se ha realizado correctamente:</p>
+
+<p><strong>1:</strong> Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, <em>“18.234.12.215/phpmyadmin”</em>.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar1.png" alt="Error" class="center" /></p>
+
+<p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar2.png" alt="Error" class="center" /></p>
+
+<p><strong>2:</strong> A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador <em>“18.234.12.215/adminer”</em>.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar3.png" alt="Error" class="center" /></p>
+
+<p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar4.png" alt="Error" class="center" /></p>
+
+<p><strong>3:</strong> Finalmente entraremos al servidor de GoAcess que registra la actividad que hay en el servidor. Para acceder a el con nuestro usuario y contraseña ponemos en el navegador <em>“18.234.12.215/stats”</em>.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar5.png" alt="Error" class="center" /></p>
+
+<p>Una vez accedamos podemos ver las estadísticas del servidor.</p>
+
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar6.png" alt="Error" class="center" /></p>
+:ET
