@@ -1,4 +1,4 @@
-I"�+<h1 id="iaw-practica-01">IAW-Practica-01</h1>
+I"R-<h1 id="iaw-practica-01">IAW-Practica-01</h1>
 <p>Práctica 01 del módulo de IAW</p>
 
 <h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia:</h2>
@@ -9,17 +9,17 @@ La configuración de la instancia será la siguiente:</p>
 <p><br />
 <strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu</p>
 
-<p><img src="Practica-Jekyll/_posts/images/practica1/creacion1.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion1.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
 
-<p><img src="images/practica1/creacion2.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion2.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>3:</strong> Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida.</p>
 
-<p><img src="images/practica1/creacion3.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion3.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>4:</strong> Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario.</p>
@@ -28,12 +28,12 @@ La configuración de la instancia será la siguiente:</p>
 
 <p>Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del <em>Explorador Remoto</em> de <strong>Microsoft</strong></p>
 
-<p><img src="images/practica1/implementar1.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/implementar1.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>1:</strong> Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH.</p>
 
-<p><img src="images/practica1/implementar2.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/implementar2.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>2:</strong> Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en <strong>GitHub</strong> para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando:</p>
@@ -45,7 +45,7 @@ La configuración de la instancia será la siguiente:</p>
 
 <p>Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio:</p>
 
-<p><img src="images/practica1/trabajo1.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/trabajo1.png" alt="Error" class="center" /></p>
 
 <p><br />
 Empezamos a crear el script de automatización para la instalación de las herramientas LAMP</p>
@@ -171,25 +171,25 @@ apt <span class="nb">install </span>phpmyadmin php-mbstring php-zip php-gd php-j
 
 <p><strong>1:</strong> Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, <em>“18.234.12.215/phpmyadmin”</em>.</p>
 
-<p><img src="images/practica1/comprobar1.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar1.png" alt="Error" class="center" /></p>
 
 <p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
 
-<p><img src="images/practica1/comprobar2.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar2.png" alt="Error" class="center" /></p>
 
 <p><strong>2:</strong> A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador <em>“18.234.12.215/adminer”</em>.</p>
 
-<p><img src="images/practica1/comprobar3.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar3.png" alt="Error" class="center" /></p>
 
 <p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
 
-<p><img src="images/practica1/comprobar4.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar4.png" alt="Error" class="center" /></p>
 
 <p><strong>3:</strong> Finalmente entraremos al servidor de GoAcess que registra la actividad que hay en el servidor. Para acceder a el con nuestro usuario y contraseña ponemos en el navegador <em>“18.234.12.215/stats”</em>.</p>
 
-<p><img src="images/practica1/comprobar5.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar5.png" alt="Error" class="center" /></p>
 
 <p>Una vez accedamos podemos ver las estadísticas del servidor.</p>
 
-<p><img src="images/practica1/comprobar6.png" width="350" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar6.png" alt="Error" class="center" /></p>
 :ET

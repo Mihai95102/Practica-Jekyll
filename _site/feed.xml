@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://0.0.0.0:4000/Practica-Jekyll/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/Practica-Jekyll/" rel="alternate" type="text/html" /><updated>2023-02-22T06:35:39-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/feed.xml</id><title type="html">Prácica Jekyll IAW</title><subtitle>Hola buenas tardes esto es una prueba de creación de un página Web con Jekyll.</subtitle><entry><title type="html">Práctica 1</title><link href="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html" rel="alternate" type="text/html" title="Práctica 1" /><published>2023-02-20T19:18:00-06:00</published><updated>2023-02-20T19:18:00-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1</id><content type="html" xml:base="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html"><![CDATA[<h1 id="iaw-practica-01">IAW-Practica-01</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://0.0.0.0:4000/Practica-Jekyll/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/Practica-Jekyll/" rel="alternate" type="text/html" /><updated>2023-02-22T12:02:03-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/feed.xml</id><title type="html">Práctica Jekyll IAW</title><subtitle>Hola buenas tardes esto es una prueba de creación de un página Web con Jekyll.</subtitle><entry><title type="html">Práctica 1</title><link href="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html" rel="alternate" type="text/html" title="Práctica 1" /><published>2023-02-20T19:18:00-06:00</published><updated>2023-02-20T19:18:00-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1</id><content type="html" xml:base="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica1.html"><![CDATA[<h1 id="iaw-practica-01">IAW-Practica-01</h1>
 <p>Práctica 01 del módulo de IAW</p>
 
 <h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia:</h2>
@@ -9,17 +9,17 @@ La configuración de la instancia será la siguiente:</p>
 <p><br />
 <strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu</p>
 
-<p><img src="/images/practica1/creacion1.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion1.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
 
-<p><img src="/images/practica1/creacion2.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion2.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>3:</strong> Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida.</p>
 
-<p><img src="/images/practica1/creacion3.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/creacion3.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>4:</strong> Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario.</p>
@@ -28,12 +28,12 @@ La configuración de la instancia será la siguiente:</p>
 
 <p>Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del <em>Explorador Remoto</em> de <strong>Microsoft</strong></p>
 
-<p><img src="/images/practica1/implementar1.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/implementar1.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>1:</strong> Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH.</p>
 
-<p><img src="/images/practica1/implementar2.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/implementar2.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>2:</strong> Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en <strong>GitHub</strong> para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando:</p>
@@ -45,7 +45,7 @@ La configuración de la instancia será la siguiente:</p>
 
 <p>Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio:</p>
 
-<p><img src="/images/practica1/trabajo1.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/trabajo1.png" alt="Error" class="center" /></p>
 
 <p><br />
 Empezamos a crear el script de automatización para la instalación de las herramientas LAMP</p>
@@ -171,27 +171,27 @@ apt <span class="nb">install </span>phpmyadmin php-mbstring php-zip php-gd php-j
 
 <p><strong>1:</strong> Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, <em>“18.234.12.215/phpmyadmin”</em>.</p>
 
-<p><img src="/images/practica1/comprobar1.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar1.png" alt="Error" class="center" /></p>
 
 <p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
 
-<p><img src="/images/practica1/comprobar2.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar2.png" alt="Error" class="center" /></p>
 
 <p><strong>2:</strong> A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador <em>“18.234.12.215/adminer”</em>.</p>
 
-<p><img src="/images/practica1/comprobar3.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar3.png" alt="Error" class="center" /></p>
 
 <p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
 
-<p><img src="/images/practica1/comprobar4.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar4.png" alt="Error" class="center" /></p>
 
 <p><strong>3:</strong> Finalmente entraremos al servidor de GoAcess que registra la actividad que hay en el servidor. Para acceder a el con nuestro usuario y contraseña ponemos en el navegador <em>“18.234.12.215/stats”</em>.</p>
 
-<p><img src="/images/practica1/comprobar5.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar5.png" alt="Error" class="center" /></p>
 
 <p>Una vez accedamos podemos ver las estadísticas del servidor.</p>
 
-<p><img src="/images/practica1/comprobar6.png" alt="Error" class="center" /></p>]]></content><author><name></name></author><category term="practicas" /><summary type="html"><![CDATA[IAW-Practica-01 Práctica 01 del módulo de IAW]]></summary></entry><entry><title type="html">Práctica 2</title><link href="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica2.html" rel="alternate" type="text/html" title="Práctica 2" /><published>2023-02-20T19:18:00-06:00</published><updated>2023-02-20T19:18:00-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica2</id><content type="html" xml:base="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica2.html"><![CDATA[<h1 id="iaw-practica-02">IAW-Practica-02</h1>
+<p><img src="http://0.0.0.0:4000/images/practica1/comprobar6.png" alt="Error" class="center" /></p>]]></content><author><name></name></author><category term="practicas" /><summary type="html"><![CDATA[IAW-Practica-01 Práctica 01 del módulo de IAW Implementando la nueva Instancia: Lo primero que haremos será entrar en dentro del panel EC2 en AWS Academy para poder lanzar la nueva instancia. La configuración de la instancia será la siguiente: 1: Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu 2: Seleccionamos el par de claves que hemos usado anteriormente vockey, aunque se podría crear otro par de claves si queremos. 3: Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida. 4: Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario. Implementación de la Instancia en Visual Studio Code Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del Explorador Remoto de Microsoft 1: Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH. 2: Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en GitHub para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando: git clone https://github.com/Mihai95102/IAW-Practica-01.git Empezando a automatizar los scripts Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio: Empezamos a crear el script de automatización para la instalación de las herramientas LAMP El script install_lamp.sh contendrá lo siguiente: #!/bin/bash set -x # Actualizamos los repositorios apt-get update # Actualizamos los paquetes nuevos # apt-get upgrade -y # Instalamos el servidor web apache apt-get install apache2 -y # Instalamos el sistema gestor de BD apt-get install mysql-server -y # Instalamos los módulos de PHP apt-get install libapache2-mod-php php-mysql -y # Copiamos el archivo para ver que se ha instalado cp ../PHP/info.php /var/www/html El siguiente script y último que creamremos será uno el que instalaremos las herramientas de PHPMyAdmin, Adminer y GoAcess. El script de install.tools.sh será el siguiente: #!/bin/bash set -x # Variables de configuración PHPMYADMIN_APP_PASSWORD=hola STATS_USER=mihai STATS_PASSWORD=hola DB_USER=mihai DB_PASSWORD=hola # Configuramos las respuestas para hacer una instalación desatendida de phpMyAdmin echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | debconf-set-selections echo "phpmyadmin phpmyadmin/dbconfig-install boolean true" | debconf-set-selections echo "phpmyadmin phpmyadmin/mysql/app-pass password $PHPMYADMIN_APP_PASSWORD" | debconf-set-selections echo "phpmyadmin phpmyadmin/app-password-confirm password $PHPMYADMIN_APP_PASSWORD" | debconf-set-selections # Creación de la base de datos y el usuario de BD mysql -u root &lt;&lt;&lt; "DROP USER IF EXISTS $DB_USER" mysql -u root &lt;&lt;&lt; "CREATE USER IF NOT EXISTS '$DB_USER'@'%' IDENTIFIED BY '$DB_PASSWORD'" mysql -u root &lt;&lt;&lt; "GRANT ALL PRIVILEGES ON *.* TO $DB_USER@'%'" # Instalación de phpMyAdmin apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y # Instalación de Adminer: # Descargamos el archivo de Adminer wget https://github.com/vrana/adminer/releases/download/v4.8.1/adminer-4.8.1-mysql.php # Creamos un directorio para Adminer mkdir -p /var/www/html/adminer # Renombramos el archivo mv adminer-4.8.1-mysql.php /var/www/html/adminer/index.php # Instalación de GoAccess: # Añadimos el repositorio de GoAccess echo "deb http://deb.goaccess.io/ $(lsb_release -cs) main" &gt; /etc/apt/sources.list.d/goaccess.list # Añadimos la clave pública de GoAccess en nuestra máquina wget -O - https://deb.goaccess.io/gnugpg.key | sudo apt-key add - # Actualizamos los repositorios apt update # Instalamos GoAccess apt install goaccess -y # Creamos el directorio stats mkdir -p /var/www/html/stats # Modificamos el propietario y el grupo del directorio /var/www/html chown www-data:www-data /var/www/html -R # Ejecutamos GoAcces en segundo plano sudo goaccess /var/log/apache2/access.log -o /var/www/html/stats/index.html --log-format=COMBINED --real-time-html --daemonize # Control de acceso a un directorio con .htaccess: # Creamos un directorio para guardar el archivo de claves mkdir -p /etc/apache2/claves # Creamos un usuario/password/en un archivo .htpasswd sudo htpasswd -bc /etc/apache2/claves/.htpasswd $STATS_USER $STATS_PASSWORD # Copiamos el archivo de configuración de Apache cp ../Conf/000-default.conf /etc/apache2/sites-available # Reiniciamos el servicio de Apache systemctl restart apache2 # Control de acceso a un directorio con .htaccess # Creamos un usuario/password/en un archivo .htpasswd sudo htpasswd -bc /etc/apache2/claves/.htpasswd $STATS_USER $STATS_PASSWORD # Copiamos el archivo htaccess en /var/www/html/stats cp ../htaccess/htaccess /var/www/html/stats/.htaccess # Copiamos el archivo de configuración de Apache cp ../Conf/000-default-htaccess.conf /etc/apache2/sites-available/000-default.conf # Reiniciamos el servicio de Apache systemctl restart apache2 Una ejecutemos estos scripts podremos comprobar que la instalación se ha realizado correctamente: 1: Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, “18.234.12.215/phpmyadmin”. Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema. 2: A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador “18.234.12.215/adminer”. Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema. 3: Finalmente entraremos al servidor de GoAcess que registra la actividad que hay en el servidor. Para acceder a el con nuestro usuario y contraseña ponemos en el navegador “18.234.12.215/stats”. Una vez accedamos podemos ver las estadísticas del servidor.]]></summary></entry><entry><title type="html">Práctica 2</title><link href="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica2.html" rel="alternate" type="text/html" title="Práctica 2" /><published>2023-02-20T19:18:00-06:00</published><updated>2023-02-20T19:18:00-06:00</updated><id>http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica2</id><content type="html" xml:base="http://0.0.0.0:4000/Practica-Jekyll/practicas/2023/02/20/practica2.html"><![CDATA[<h1 id="iaw-practica-02">IAW-Practica-02</h1>
 <p>Práctica 2 de instalación de herramientas LAMP en <strong>RedHatEnterpriseLinux (RHEL)</strong></p>
 
 <h2 id="implementando-la-nueva-instancia">Implementando la nueva Instancia:</h2>
@@ -202,17 +202,17 @@ La configuración de la instancia será la siguiente:</p>
 <p><br />
 <strong>1:</strong> Ponemos el nombre a la máquina y seleccionamos como SO el RedHat</p>
 
-<p><img src="/images/practica2/creacion1.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/creacion1.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>2:</strong> Seleccionamos el par de claves que hemos usado anteriormente <em>vockey</em>, aunque se podría crear otro par de claves si queremos.</p>
 
-<p><img src="/images/practica2/creacion2.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/creacion2.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>3:</strong> Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida.</p>
 
-<p><img src="/images/practica2/creacion3.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/creacion3.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>4:</strong> Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario.</p>
@@ -221,12 +221,12 @@ La configuración de la instancia será la siguiente:</p>
 
 <p>Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del <em>Explorador Remoto</em> de <strong>Microsoft</strong></p>
 
-<p><img src="/images/practica2/implementar1.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/implementar1.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>1:</strong> Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH.</p>
 
-<p><img src="/images/practica2/implementar2.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/implementar2.png" alt="Error" class="center" /></p>
 
 <p><br />
 <strong>2:</strong> Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en <strong>GitHub</strong> para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando:</p>
@@ -238,7 +238,7 @@ La configuración de la instancia será la siguiente:</p>
 
 <p>Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio:</p>
 
-<p><img src="/images/practica2/trabajo1.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/trabajo1.png" alt="Error" class="center" /></p>
 
 <p><br />
 Empezamos a crear el script de automatización para la instalación de las herramientas LAMP, además de phpMyAdmin y Adminer.
@@ -351,18 +351,18 @@ dnf <span class="nb">install</span> <span class="nt">-y</span> wget php php-pdo 
 </code></pre></div></div>
 <p><strong>1:</strong> Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, <em>“18.234.12.215/phpmyadmin”</em>.</p>
 
-<p><img src="/images/practica2/comprobar1.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/comprobar1.png" alt="Error" class="center" /></p>
 
 <p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
 
-<p><img src="/images/practica2/comprobar2.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/comprobar2.png" alt="Error" class="center" /></p>
 
 <p><strong>2:</strong> A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador <em>“18.234.12.215/adminer”</em>.</p>
 
-<p><img src="/images/practica2/comprobar3.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/comprobar3.png" alt="Error" class="center" /></p>
 
 <p>Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema.</p>
 
-<p><img src="/images/practica2/comprobar4.png" alt="Error" class="center" /></p>
+<p><img src="http://0.0.0.0:4000/images/practica2/comprobar4.png" alt="Error" class="center" /></p>
 
-<p>Aqui termina la guía de la instalación de las herramientas LAMP.</p>]]></content><author><name></name></author><category term="practicas" /><summary type="html"><![CDATA[IAW-Practica-02 Práctica 2 de instalación de herramientas LAMP en RedHatEnterpriseLinux (RHEL)]]></summary></entry></feed>
+<p>Aqui termina la guía de la instalación de las herramientas LAMP.</p>]]></content><author><name></name></author><category term="practicas" /><summary type="html"><![CDATA[IAW-Practica-02 Práctica 2 de instalación de herramientas LAMP en RedHatEnterpriseLinux (RHEL) Implementando la nueva Instancia: Lo primero que haremos será entrar en dentro del panel EC2 en AWS Academy para poder lanzar la nueva instancia. La configuración de la instancia será la siguiente: 1: Ponemos el nombre a la máquina y seleccionamos como SO el RedHat 2: Seleccionamos el par de claves que hemos usado anteriormente vockey, aunque se podría crear otro par de claves si queremos. 3: Antes de acabar con la configuración de la instancia tendremos que ponerle una capacidad de RAM de 4GB para que la máquina vaya de forma más fluida. 4: Como último paso para acabar con la configuración de la instancia, haremos que la instancia que hemos creado tenga una IP Elástica, aunque este paso no es estrictamente necesario. Implementación de la Instancia en Visual Studio Code Previamente a la implementación de la instancia tendremos que instalar en el Visual Studio la extensión del Explorador Remoto de Microsoft 1: Una vez instalada la extensión añadiremos el acceso a la máquina dentro de la configuración de los destinos SSH. 2: Hecho esto ya podremos conectarnos a la máquina de RHEL remotamente desde el Visual Studio. Ahora clonaremos el repositorio que hemos creado en GitHub para poder empezar a trabajar. Para clonar el repositorio tendremos que copiar el enlace del repositorio y ejecutar el siguiente comando: git clone https://github.com/Mihai95102/IAW-Practica-02.git Empezando a automatizar los scripts Para empezar a trabajar, primero crearemos esta estrctura dentro del directorio: Empezamos a crear el script de automatización para la instalación de las herramientas LAMP, además de phpMyAdmin y Adminer. El script LAMP_tools.sh contendrá lo siguiente: #!/bin/bash set -x # Variables de configuración DB_USER=mihai DB_PASSWORD=hola # Actualizamos los repositorios dnf update -y # Actualizamos los paquetes nuevos # dnf upgrade -y # Instalamos el servidor web apache dnf install httpd -y # Iniciamos el servicio de Apache systemctl start httpd # Habilitamos el servicio de Apache systemctl enable httpd # Instalamos el sistema gestor de BD dnf install mysql-server -y # Iniciamos el servicio de MySQL systemctl start mysqld # Habilitamos el servicio de MySQL systemctl enable mysqld # Instalamos PHP dnf install php -y # Instalamos las extensiones de PHP dnf install php-mysqlnd -y dnf install php-zip php-json php-fpm -y # Habilitamos el servicio de FPM systemctl enable --now php-fpm # Después de la instalación es necesario reiniciar el servicio de Apache systemctl restart httpd # Copiamos el archivo para ver que se ha instalado cp ../php/info.php /var/www/html # Instalamos los repositorios necesarios para la instalación de phpMyAdmin dnf install -y wget php php-pdo php-pecl-zip php-common php-mbstring php-cli php-xml tar dnf install -y php-mbstring # Instalación de phpMyAdmin # Creación de la base de datos y el usuario de BD mysql -u root &lt;&lt;&lt; "DROP USER IF EXISTS $DB_USER" mysql -u root &lt;&lt;&lt; "CREATE USER IF NOT EXISTS '$DB_USER'@'%' IDENTIFIED BY '$DB_PASSWORD'" mysql -u root &lt;&lt;&lt; "GRANT ALL PRIVILEGES ON *.* TO $DB_USER@'%'" # Accedemos al directorio /var/www/html cd /var/www/html # Instalamos la utilidad wget para poder descargar el código fuente de phpMyAdmin dnf install wget # Descargamos el código fuente de phpMyAdmin wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.tar.gz # Descomprimimos el archivo que acabamos de descargar tar xvf phpMyAdmin-latest-all-languages.tar.gz # Eliminamos el archivo .tar.gz rm phpMyAdmin-latest-all-languages.tar.gz # Renombramos el directorio mv phpMyAdmin-5.2.0-all-languages/ phpmyadmin # Modificamos el propietario y el grupo del directorio chown -R apache:apache /var/www/html/phpmyadmin # Creamos el archivo de configuración a partir del archivo config.sample.inc.php cp /var/www/html/phpmyadmin/config.sample.inc.php /var/www/html/phpmyadmin/config.inc.php # Editamos el archivo de configuración config.inc.php # nano /var/www/html/phpmyadmin/config.inc.php # Instalación de Adminer: # Descargamos el archivo de Adminer wget https://github.com/vrana/adminer/releases/download/v4.8.1/adminer-4.8.1-mysql.php # Creamos un directorio para Adminer mkdir -p /var/www/html/adminer # Renombramos el archivo mv adminer-4.8.1-mysql.php /var/www/html/adminer/index.php # Modificamos el propietario y el grupo del directorio /var/www/html chown -R apache:apache /var/www/html -R # Reiniciamos Apache systemctl restart httpd 1: Para comprobar que el servidor de PHPMyAdmin funciona tendremos que acceder a él con la IP de la máquina, “18.234.12.215/phpmyadmin”. Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema. 2: A continuación comprobaremos que podemos acceder al servidor de Adminer con el mismo usuario y contraseña que hemos usado para PHPMyAdmin. Para acceder al servidor de Adminner escribiremos en el navegador “18.234.12.215/adminer”. Una vez accedemos con nuestro usuario y contraseña podemos ver que tenemos acceso a todas las bases de datos del sistema. Aqui termina la guía de la instalación de las herramientas LAMP.]]></summary></entry></feed>
