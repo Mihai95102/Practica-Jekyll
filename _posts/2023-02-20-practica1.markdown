@@ -15,7 +15,7 @@ La configuración de la instancia será la siguiente:
 \
 __1:__ Ponemos el nombre a la máquina y seleccionamos como SO el Ubuntu
 
-<img src="images/practica1/creacion1.png" width="350"/>
+<img src="../../../../../_posts/images/practica1/creacion1.png" width="350"/>
 
 \
 __2:__ Seleccionamos el par de claves que hemos usado anteriormente *vockey*, aunque se podría crear otro par de claves si queremos.
