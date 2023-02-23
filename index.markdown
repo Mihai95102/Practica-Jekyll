@@ -4,4 +4,4 @@
 
 layout: home
 ---
-## Hola que tal, esto es una prueba
+<body background-color: #6faaee;></body>
