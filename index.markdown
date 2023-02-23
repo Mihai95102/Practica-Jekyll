@@ -4,4 +4,3 @@
 
 layout: home
 ---
-<body background-color: #6faaee;></body>
