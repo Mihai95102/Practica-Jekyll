@@ -23,7 +23,7 @@ docker run -it --rm -v "$PWD:/srv/jekyll" jekyll/jekyll jekyll build
 Cuando ejecutemos este comando se nos creará la carpeta de "site".
 
 ## Configuración:
-Para configurar la página de Jekyll, aplicando temas, título, descriptción, contactos, etc. Para ello editaremos el archivo de "_config.yml_".
+Para configurar la página de Jekyll, aplicando temas, título, descripción, contactos, etc. Para ello editaremos el archivo de "_config.yml_".
 
 El archivo quedaría de la siguiente forma:
 ```yaml
