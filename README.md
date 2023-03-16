@@ -4,7 +4,7 @@ Práctica jekyll
 ## Estructura
 La estructura de directorios que usaremos será la siguiente:
 
-<img src="./images/estructura.png" width="350"/>
+<img src="./images/estructura.png" width="250"/>
 
 ## Creción de nuestro Blog:
 Para crear nuestro blog ejecutaremos el siguienete comando para que se cree la estructura de Jekyll:
